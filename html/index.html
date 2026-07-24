@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devclub - A Revolução do Ensino Tecnológico</title>
+    
+    <!-- Importando fontes modernas do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Importando biblioteca de animações AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Importando ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Importando arquivo CSS externo -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Fundo de partículas animadas -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Navbar com efeito glassmorphism -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="../assets/img/logo-devclub-2.png" alt="Devclub Logo" class="logo-img">
+        </div>
+        
+        <!-- Botão de menu sanduíche -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#formations">Formações</a></li>
+            <li><a href="#companies">Empresas</a></li>
+            <li><a href="#teachers">Professores</a></li>
+            <li><a href="#stats">Resultados</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">🚀 A Revolução do Ensino Tecnológico</span>
+            <h1 class="hero-title">DEVCLUB</h1>
+            <p class="hero-subtitle">
+                A instituição de ensino de tecnologia mais complexa e insana do mercado. 
+                Transformamos desafios impossíveis em soluções extraordinárias.
+            </p>
+            
+            <!-- Estatísticas principais -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15000">15000</div>
+                    <div class="stat-label">Alunos Formados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">500</div>
+                    <div class="stat-label">Empresas Parceiras</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">98</div>
+                    <div class="stat-label">% Empregabilidade</div>
+                </div>
+            </div>
+            
+            <a href="#formations" class="cta-button">Começar Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre o Devclub -->
+    <section class="section" id="about">
+        <div class="section-header">
+           
+            <h2 class="section-title">O Devclub é Diferente</h2>
+            <p class="section-description">
+                Não somos apenas uma escola de programação. Somos uma fábrica de inovação, 
+                onde a tecnologia encontra a excelência humana.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="card-title">Inovação Constante</h3>
+                <p class="card-description">
+                    Nossos métodos de ensino são desenvolvidos para estar sempre à frente 
+                    do mercado tecnológico. Cada dia é uma nova descoberta, cada projeto 
+                    é uma revolução.
+                </p>
+            </div>
+
+            <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="card-title">Aprendizado Insano</h3>
+                <p class="card-description">
+                    Nossa abordagem desafia o convencional. Criamos ambientes de 
+                    aprendizado que simulam cenários reais e complexos, preparando 
+                    nossos alunos para qualquer desafio.
+                </p>
+            </div>
+
+            <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="card-title">Impacto Global</h3>
+                <p class="card-description">
+                    Nossos alunos estão transformando empresas em todo o mundo. 
+                    Do Brasil ao Vale do Silício, o Devclub está presente onde 
+                    a tecnologia faz a diferença.
+                </p>
+            </div>
+
+            <div class="about-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="card-title">Excelência Garantida</h3>
+                <p class="card-description">
+                    Não aceitamos menos que a perfeição. Cada linha de código, 
+                    cada projeto, cada solução é refinada até atingir o nível 
+                    de excelência que define o Devclub.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Formações -->
+    <section class="section formations-section" id="formations">
+        <div class="section-header">
+            <span class="section-badge">Nossas Formações</span>
+            <h2 class="section-title">Trilhas de Conhecimento</h2>
+            <p class="section-description">
+                Nossos alunos dominam ferramentas que transformam problemas complexos 
+                em soluções elegantes e eficientes.
+            </p>
+        </div>
+
+        <div class="formations-grid">
+            <div class="formation-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="formation-badge">Full Stack</span>
+                <h3 class="formation-title">Desenvolvimento Web Completo</h3>
+                <p class="formation-description">
+                    Domine front-end e back-end criando aplicações web escaláveis 
+                    e de alta performance que resolvem problemas reais.
+                </p>
+                <div class="formation-skills">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">AWS</span>
+                </div>
+            </div>
+
+            <div class="formation-card" data-aos="fade-up" data-aos-delay="200">
+                <span class="formation-badge">Data Science</span>
+                <h3 class="formation-title">Ciência de Dados Avançada</h3>
+                <p class="formation-description">
+                    Transforme dados em insights valiosos. Nossos alunos criam 
+                    modelos preditivos e soluções de IA que mudam o jogo.
+                </p>
+                <div class="formation-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Big Data</span>
+                </div>
+            </div>
+
+            <div class="formation-card" data-aos="fade-up" data-aos-delay="300">
+                <span class="formation-badge">Cloud</span>
+                <h3 class="formation-title">Arquitetura Cloud</h3>
+                <p class="formation-description">
+                    Projete e implemente infraestruturas cloud robustas e seguras 
+                    que suportam milhões de usuários.
+                </p>
+                <div class="formation-skills">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">DevOps</span>
+                </div>
+            </div>
+
+            <div class="formation-card" data-aos="fade-up" data-aos-delay="400">
+                <span class="formation-badge">Mobile</span>
+                <h3 class="formation-title">Desenvolvimento Mobile</h3>
+                <p class="formation-description">
+                    Crie aplicativos mobile nativos e cross-platform que 
+                    encantam usuários e dominam as lojas de apps.
+                </p>
+                <div class="formation-skills">
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Swift</span>
+                    <span class="skill-tag">Kotlin</span>
+                </div>
+            </div>
+
+            <div class="formation-card" data-aos="fade-up" data-aos-delay="500">
+                <span class="formation-badge">Cybersecurity</span>
+                <h3 class="formation-title">Segurança Cibernética</h3>
+                <p class="formation-description">
+                    Proteja sistemas críticos contra ameaças avançadas. 
+                    Nossos alunos são os guardiões do mundo digital.
+                </p>
+                <div class="formation-skills">
+                    <span class="skill-tag">Penetration Testing</span>
+                    <span class="skill-tag">Ethical Hacking</span>
+                    <span class="skill-tag">SIEM</span>
+                    <span class="skill-tag">Cryptocurrency</span>
+                </div>
+            </div>
+
+            <div class="formation-card" data-aos="fade-up" data-aos-delay="600">
+                <span class="formation-badge">Blockchain</span>
+                <h3 class="formation-title">Blockchain & Web3</h3>
+                <p class="formation-description">
+                    Desenvolva soluções descentralizadas que redefinem 
+                    transações e contratos digitais.
+                </p>
+                <div class="formation-skills">
+                    <span class="skill-tag">Solidity</span>
+                    <span class="skill-tag">Smart Contracts</span>
+                    <span class="skill-tag">DeFi</span>
+                    <span class="skill-tag">NFTs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Empresas Parceiras -->
+    <section class="section companies-section" id="companies">
+        <div class="section-header">
+            <span class="section-badge">Quem Contrata Nossos Alunos</span>
+            <h2 class="section-title">Empresas que Acreditam</h2>
+            <p class="section-description">
+                As maiores e mais inovadoras empresas do mundo confiam 
+                nos profissionais formados pelo Devclub.
+            </p>
+        </div>
+
+        <div class="companies-grid">
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="company-logo">
+                    <i class="fab fa-google"></i>
+                </div>
+                <h3 class="company-name">Google</h3>
+                <p class="company-info">Mais de 200 alunos contratados</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="company-logo">
+                    <i class="fab fa-amazon"></i>
+                </div>
+                <h3 class="company-name">Amazon</h3>
+                <p class="company-info">Líder em contratações AWS</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="company-logo">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <h3 class="company-name">Microsoft</h3>
+                <p class="company-info">Parceria estratégica global</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="company-logo">
+                    <i class="fab fa-meta"></i>
+                </div>
+                <h3 class="company-name">Meta</h3>
+                <p class="company-info">Inovação em realidade virtual</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="company-logo">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <h3 class="company-name">Apple</h3>
+                <p class="company-info">Excelência em mobile</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="company-logo">
+                    <i class="fab fa-spotify"></i>
+                </div>
+                <h3 class="company-name">Spotify</h3>
+                <p class="company-info">Especialistas em streaming</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="700">
+                <div class="company-logo">
+                    <i class="fab fa-uber"></i>
+                </div>
+                <h3 class="company-name">Uber</h3>
+                <p class="company-info">Líderes em mobility</p>
+            </div>
+
+            <div class="company-card" data-aos="zoom-in" data-aos-delay="800">
+                <div class="company-logo">
+                    <i class="fab fa-airbnb"></i>
+                </div>
+                <h3 class="company-name">Airbnb</h3>
+                <p class="company-info">Inovação em hospitality</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Professores -->
+    <section class="section teachers-section" id="teachers">
+        <div class="section-header">
+            <span class="section-badge">Nossos Mestres</span>
+            <h2 class="section-title">Professores Extraordinários</h2>
+            <p class="section-description">
+                Aprendam com os melhores profissionais do mercado tecnológico, 
+                que já construíram o futuro e agora ensinam você a fazer o mesmo.
+            </p>
+        </div>
+
+        <div class="teachers-grid">
+            <div class="teacher-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="teacher-avatar">
+                    <img src="../assets/img/images.jpg" alt="Dr. Carlos Mendes" class="teacher-img">
+                </div>
+                <h3 class="teacher-name">Dr. Carlos Mendes</h3>
+                <p class="teacher-role">Arquiteto de Software Sênior</p>
+                <p class="teacher-bio">
+                    Ex-Google e Microsoft, com 15+ anos de experiência em 
+                    sistemas distribuídos e arquitetura cloud.
+                </p>
+            </div>
+
+            <div class="teacher-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="teacher-avatar">
+                    <img src="../assets/img/image-social.png" alt="Dr. Miguel Pedreira" class="teacher-img">
+                </div>
+                <h3 class="teacher-name">Dr. Miguel Pedreira</h3>
+                <p class="teacher-role">Especialista em IA & Machine Learning</p>
+                <p class="teacher-bio">
+                    PhD em Inteligência Artificial pela Stanford, pioneira 
+                    em redes neurais e deep learning.
+                </p>
+            </div>
+
+            <div class="teacher-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="teacher-avatar">
+                    <img src="../assets/img/ricardo.png" alt="Ricardo Santos" class="teacher-img">
+                </div>
+                <h3 class="teacher-name">Ricardo Santos</h3>
+                <p class="teacher-role">Cybersecurity Expert</p>
+                <p class="teacher-bio">
+                    Ex-hacker ético do NSA, responsável por segurança 
+                    de sistemas críticos em todo o mundo.
+                </p>
+            </div>
+
+            <div class="teacher-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="teacher-avatar">
+                    <img src="../assets/img/mariana.jpeg" alt="Marina Costa" class="teacher-img">
+                </div>
+                <h3 class="teacher-name">Marina Costa</h3>
+                <p class="teacher-role">Mobile Development Lead</p>
+                <p class="teacher-bio">
+                    Criadora de apps com 10M+ downloads, especialista 
+                    em UX/UI e desenvolvimento mobile.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Estatísticas -->
+    <section class="stats-section" id="stats">
+        <div class="stats-container">
+            <div class="section-header">
+                <span class="section-badge">Nossos Números</span>
+                <h2 class="section-title">Resultados que Falam</h2>
+                <p class="section-description">
+                    Cada número representa uma história de sucesso, 
+                    uma vida transformada pelo poder da tecnologia.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-value" data-count="15000">0</div>
+                    <div class="stat-text">Alunos Formados</div>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-value" data-count="500">0</div>
+                    <div class="stat-text">Empresas Parceiras</div>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-value" data-count="98">0</div>
+                    <div class="stat-text">% Empregabilidade</div>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-value" data-count="45">0</div>
+                    <div class="stat-text">Países Atendidos</div>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-value" data-count="50000">0</div>
+                    <div class="stat-text">Projetos Entregues</div>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-value" data-count="4.9">0</div>
+                    <div class="stat-text">Avaliação Média</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../assets/img/logo-devclub-2.png" alt="Devclub Logo" class="footer-logo">
+                <p>
+                    A revolução do ensino tecnológico. Transformando 
+                    sonhos em realidade através da excelência e inovação.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#formations">Formações</a></li>
+                    <li><a href="#companies">Empresas</a></li>
+                    <li><a href="#teachers">Professores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Formações</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Full Stack Development</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Cloud Architecture</a></li>
+                    <li><a href="#">Cybersecurity</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <i class="fas fa-envelope"></i> contato@devclub.com
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> +55 11 99999-9999
+                </p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> São Paulo, Brasil
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Devclub. Todos os direitos reservados. Feito com 💜 e muito código.</p>
+        </div>
+    </footer>
+
+    <!-- Botão de Suporte Flutuante -->
+    <button class="support-button" id="supportBtn" title="Falar com Suporte">
+        <i class="fas fa-headset"></i>
+    </button>
+
+    <!-- Modal de Suporte -->
+    <div class="support-modal" id="supportModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title">Fale Conosco</h2>
+            <form class="modal-form" id="supportForm">
+                <input type="text" class="modal-input" placeholder="Seu Nome" required>
+                <input type="email" class="modal-input" placeholder="Seu E-mail" required>
+                <textarea class="modal-textarea" placeholder="Como podemos ajudar?" required></textarea>
+                <button type="submit" class="modal-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Importando biblioteca AOS para animações -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Importando arquivo JavaScript externo -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
